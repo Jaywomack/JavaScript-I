@@ -178,7 +178,17 @@ console.log(student)
    //         '1': 'secondValue' // second item in the array.
    //     }       array[0] returns 'firstValue
 
+//How to work with an array: Accessing Items
 
+const hogwarts = ['Harry', 'Hermione', 'Ron'];
+console.log(hogwarts[0]);
+console.log(hogwarts[1]);
+console.log(hogwarts[2]);
+
+hogwarts.push('Dumbledore'); //Will add something to the end of an array
+hogwarts.unshift('Snape'); //Will add something to the beginning of an array
+
+console.log(hogwarts)
 
 
 
