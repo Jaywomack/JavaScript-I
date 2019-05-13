@@ -170,7 +170,12 @@ student.characters.forEach(char => console.log(char)); //Iterates through the ar
 console.log(student)
 /*****************************************************************
  * ARRAYS IN JAVASCRIPT
- * 
+ * Arrays are very fast at retrieving a specific item.
+ * The methods all live on the JS Array Prototype. 
+ * All indexes in an array are numerical
+ * To find something with in an array, you will have to search through the whole list. Looping through an array is not the most
+ * efficient way of searching for something and their are much better ways to do it.
+ * Arrays are mutable
  */
         //Anatomy of an Array
         //  array: {
@@ -187,8 +192,56 @@ console.log(hogwarts[2]);
 
 hogwarts.push('Dumbledore'); //Will add something to the end of an array
 hogwarts.unshift('Snape'); //Will add something to the beginning of an array
+hogwarts.pop()  // POP will remove something from the end of an array and return its value
+hogwarts.shift() //Shift will remove the first element in an array
+hogwarts.splice(1, 1) //The splice(index, number of items to remove) method changes the contents of an array by removing or replacing existing elements and/or adding new elements 
+
+//How to work with an array: Updating Items
+hogwarts[0] = 'Hagrid';
+
+
 
 console.log(hogwarts)
+/**************************
+ * Create an Array and Practice
+ * 
+ */
+const practiceArr = [];
+
+practiceArr.push('Lincoln');
+practiceArr.push('William');
+practiceArr.push('Keera');
+practiceArr.push('Kaleb');
+practiceArr.push('Whitney');
+practiceArr.push('Ted');
+practiceArr.push('Nancy');
+practiceArr.push('Denise');
+practiceArr.push('Jareds clone');
+
+ firstPersonGone = practiceArr.shift();
+ secondPersonGone = practiceArr.pop()
+ theSplit = practiceArr.splice(2, 5)
+ theLastOnesStanding = practiceArr;
+
+console.log(practiceArr)
+console.log(firstPersonGone);
+console.log(secondPersonGone);
+console.log(theSplit);
+console.log(theLastOnesStanding);
+
+//The last item in an array
+console.log(theSplit[theSplit.length -1] ) 
+console.log(practiceArr[practiceArr.length -1])
+/******************************************************************
+ * Map filter and reduce methods on arrays
+ * practice top ten methods on arrays
+ */
+//map
+
+
+//filter
+
+//reduce
 
 
 
