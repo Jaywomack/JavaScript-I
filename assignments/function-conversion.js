@@ -24,9 +24,7 @@ subtract(1,2);
 // Stretch
 
 exampleArray = [1,2,3,4];
-const triple = (num) => {
-     exampleArray.map * 3;
-}
+const triple = exampleArray.map(item => item ) 
 // const triple = exampleArray.map(function (num) {
 //   return num * 3;
 // });
