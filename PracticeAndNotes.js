@@ -218,27 +218,28 @@ practiceArr.push('Nancy');
 practiceArr.push('Denise');
 practiceArr.push('Jareds clone');
 
- firstPersonGone = practiceArr.shift();
- secondPersonGone = practiceArr.pop()
- theSplit = practiceArr.splice(2, 5)
- theLastOnesStanding = practiceArr;
+//  firstPersonGone = practiceArr.shift();
+//  secondPersonGone = practiceArr.pop()
+//  theSplit = practiceArr.splice(2, 5)
+//  theLastOnesStanding = practiceArr;
 
-console.log(practiceArr)
-console.log(firstPersonGone);
-console.log(secondPersonGone);
-console.log(theSplit);
-console.log(theLastOnesStanding);
+// console.log(practiceArr)
+// console.log(firstPersonGone);
+// console.log(secondPersonGone);
+// console.log(theSplit);
+// console.log(theLastOnesStanding);
 
 //The last item in an array
-console.log(theSplit[theSplit.length -1] ) 
-console.log(practiceArr[practiceArr.length -1])
+// console.log(theSplit[theSplit.length -1] ) 
+// console.log(practiceArr[practiceArr.length -1])
 /******************************************************************
  * Map filter and reduce methods on arrays
  * practice top ten methods on arrays
  */
 //map
 
-
+const mappedArr = practiceArr.map(element => element.toUpperCase());
+console.log(mappedArr)
 //filter
 
 //reduce
